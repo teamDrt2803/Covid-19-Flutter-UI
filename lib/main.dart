@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: kBackgroundColor,
           fontFamily: "Poppins",
           textTheme: TextTheme(
-            body1: TextStyle(color: kBodyTextColor),
+            bodyText1: TextStyle(color: kBodyTextColor),
           )),
       home: HomeScreen(),
     );
@@ -35,14 +35,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller.addListener(onScroll);
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     controller.dispose();
     super.dispose();
   }
